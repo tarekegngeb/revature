@@ -15,7 +15,8 @@ public class CreatArray {
 		DisplayAllEvenAndOddNumbers(arr);
 		SortTheArray(arr);
 		AverageSumOfArrays(arr);
-		DisplayGreatestAndSmallestNumber(arr);
+		DisplayGreatestNumbers(arr);
+		DisplaySmallestNumbers(arr);
    }
 	public static void DisplayArray(int[] arr) {
 		for(int item: arr) {
@@ -97,10 +98,10 @@ public class CreatArray {
     	System.out.println("The average of the Array is: "+avg);
     
   }
-    public static void DisplayGreatestAndSmallestNumber(int[] arr) {
+    public static void DisplayGreatestNumbers(int[] arr) {
     	int max = arr[0],max1 =arr[1],max2 = arr[2];
     	for(int i = 0; i< arr.length; i++) {
-    		if(arr[i] > max && arr[i] > max1 && arr[i] > max2) {
+    		if((arr[i] > max && arr[i] > max1) && arr[i] > max2) {
     		max = arr[i];
     		max1 = arr[i];
     		max2 = arr[i];
@@ -110,9 +111,11 @@ public class CreatArray {
     	System.out.println("The greatest number of Array: "+ max);
     	System.out.println("The greatest number of Array: "+ max1);
     	System.out.println("The greatest number of Array: "+ max2);
+    }
+    	public static void DisplaySmallestNumbers(int[] arr) {
         int min = arr[0], min1 = arr[1],min2 = arr[2];
 	    for(int i = 0; i< arr.length; i++) {
-			if(arr[i] < min && arr[i] < min1 && arr[i] < min2) {
+			if((arr[i] < min && arr[i] < min1) && arr[i] < min2) {
 			min = arr[i];
 			min1 = arr[i];
 			min2 = arr[i];

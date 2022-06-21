@@ -1,7 +1,7 @@
 package com.revature.tarekegn.assignment1;
 
 interface InterfaceDemo {
-	//static final String location = "out of town";
+	static final String location = "out of town";
 	void makeNoise();
 	void eat();
 	//void sleep();
@@ -39,6 +39,7 @@ class TestInterfaceDemo{
 		 fe.roam();
 		 fe.eat();
 		 fe.makeNoise();
+			
 	}
 	
 }
